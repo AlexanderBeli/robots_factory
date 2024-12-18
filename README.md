@@ -1,3 +1,9 @@
+# Содержание документа
+
+[Описание проекта и задачи](https://github.com/AlexanderBeli/robots_factory?tab=readme-ov-file#r4c---robots-for-consumers)
+
+[Реализация задач](https://github.com/AlexanderBeli/robots_factory?tab=readme-ov-file#выполнение-заданий)
+
 # R4C - Robots for consumers
 
 ## Небольшая предыстория.
@@ -31,3 +37,39 @@ ___
 - Написать понятный и поддерживаемый код для каждой задачи 
 - Сделать по 1 отдельному PR с решением для каждой задачи
 - Прислать ссылку на своё решение
+
+# Выполнение заданий
+
+## Реализован API-endpoint, принимающий и обрабатывающий информацию в формате JSON. 
+В результате web-запроса на этот endpoint, в базе данных появляется запись 
+отражающая информацию о произведенном на заводе роботе.
+
+Реализована валидация входных данных, на соответствие существующим в системе моделям.
+
+Протестировано с помощью библиотеки httpie ручным тестированием через cli.
+
+Пример запроса:
+
+```http POST http://127.0.0.1:8000/robots/api/v1/ {"model":"R2","version":"D2","created":"2024-12-14 23:59:59"}```
+
+Пример ответа:
+
+```HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+Cross-Origin-Opener-Policy: same-origin
+Date: Tue, 17 Dec 2024 16:37:16 GMT
+Referrer-Policy: same-origin
+Server: WSGIServer/0.2 CPython/3.13.0
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "created": "2024-12-14 23:59:59",
+    "model": "R2",
+    "serial": "R2-D2",
+    "version": "D2"
+}
+```
+
+Добавил db.sqlite3 в демонстрационных целях

@@ -1,0 +1,9 @@
+# Python files
+__pycache__/
+.idea/
+
+# macOS files
+.DS_Store
+
+# Env
+.venv/
