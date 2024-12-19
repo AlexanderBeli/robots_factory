@@ -83,3 +83,7 @@ X-Frame-Options: DENY
 ```http://127.0.0.1:8000/download-excel/```
 
 Пример файла доступен в папке summary_example
+
+## Реализована отправка уведомлений заказчику по факту появления товара на складе
+
+Посмотреть код можно [здесь](https://github.com/AlexanderBeli/robots_factory/blob/main/orders/signals.py).
