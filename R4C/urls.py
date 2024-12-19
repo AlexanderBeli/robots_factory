@@ -19,4 +19,5 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("robots/api/v1/", include("api.urls")),
+    path("download-excel/", include("printexcel.urls")),
 ]

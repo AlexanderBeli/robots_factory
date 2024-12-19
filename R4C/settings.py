@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'orders',
     'robots',
     'api',
+    'printexcel',
 ]
 
 MIDDLEWARE = [
