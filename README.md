@@ -41,6 +41,9 @@ ___
 # Выполнение заданий
 
 ## Реализован API-endpoint, принимающий и обрабатывающий информацию в формате JSON. 
+
+[PullRequest](https://github.com/AlexanderBeli/robots_factory/pull/1)
+
 В результате web-запроса на этот endpoint, в базе данных появляется запись 
 отражающая информацию о произведенном на заводе роботе.
 
@@ -76,6 +79,8 @@ X-Frame-Options: DENY
 
 ## Реализована возможность скачать по прямой ссылке Excel-файл со сводкой по суммарным показателям производства роботов за последнюю неделю.
 
+[PullRequest](https://github.com/AlexanderBeli/robots_factory/pull/2)
+
 Файл включает в себя несколько страниц, на каждой из которых представлена информация об одной модели, но с детализацией по версии.
 
 Данная функция доступна по адресу:
@@ -85,5 +90,7 @@ X-Frame-Options: DENY
 Пример файла доступен в папке summary_example
 
 ## Реализована отправка уведомлений заказчику по факту появления товара на складе
+
+[PullRequest](https://github.com/AlexanderBeli/robots_factory/pull/3)
 
 Посмотреть код можно [здесь](https://github.com/AlexanderBeli/robots_factory/blob/main/orders/signals.py).
